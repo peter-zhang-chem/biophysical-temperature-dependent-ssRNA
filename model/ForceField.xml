@@ -1,0 +1,178 @@
+<ForceField> <!--AtomTypes are 6 distinct beads-->
+  <AtomTypes> <!--Element name has to be an element on the periodic table-->
+    <Type name="0" class="Rib" element="S" mass="117.0557"/> <!--Ribose sugar (S, Ribo)-->
+    <Type name="1" class="Pho" element="P" mass="78.9596"/>  <!--Phosphate (P, Phos)-->
+    <Type name="2" class="ADE" element="B" mass="134.0472"/> <!--Adnine(Ar, ADE)-->
+    <Type name="3" class="GUA" element="C" mass="150.0421"/> <!--Guanine(Ga, GUA)-->
+    <Type name="4" class="CYT" element="N"  mass="110.0360"/> <!--Cytosine(C, CYT)-->
+    <Type name="5" class="URA" element="O"  mass="111.0200"/> <!--Uracil (U, URA)-->
+    <Type name="6" class="Ph3" element="H" mass="80.9742"/> <!--3' phosphate (Pt, 3Phos) (no charge)-->
+    <Type name="7" class="Mg" element="Mg" mass="24.3050"/> <!--Magnesium (Mg) (2+)-->
+    <Type name="8" class="Ca" element="Ca" mass="40.0780"/> <!--Calcium (Ca) (2+)-->
+  </AtomTypes>
+  <Residues>      
+    <!--ADE in the middle-->
+    <Residue name="ADE">
+      <Atom name="A" type="2"/>
+      <Atom name="S" type="0"/>
+      <Atom name="P" type="1"/>
+      <Bond atomName1="A" atomName2="S"/>
+      <Bond atomName1="S" atomName2="P"/>
+      <ExternalBond atomName="S"/>
+      <ExternalBond atomName="P"/>
+    </Residue>
+    <!--ADE at the 5'-->
+    <Residue name="ADE5">
+      <Atom name="A" type="2"/>
+      <Atom name="S" type="0"/>
+      <Atom name="P" type="1"/>
+      <Bond atomName1="A" atomName2="S"/>
+      <Bond atomName1="S" atomName2="P"/>
+      <ExternalBond atomName="S"/>
+    </Residue>
+    <!--ADE at the 3'-->
+    <Residue name="ADE3">
+      <Atom name="A" type="2"/>
+      <Atom name="S" type="0"/>
+      <Atom name="P" type="1"/>
+      <Atom name="P3" type="6"/>
+      <Bond atomName1="A" atomName2="S"/>
+      <Bond atomName1="S" atomName2="P"/>
+      <Bond atomName1="S" atomName2="P3"/>
+      <ExternalBond atomName="P"/>
+    </Residue>
+    <!--ADE at the 3' with no phosphate-->
+    <Residue name="ADE3dP">
+      <Atom name="A" type="3"/>
+      <Atom name="S" type="0"/>
+      <Atom name="P" type="1"/>
+      <Bond atomName1="A" atomName2="S"/>
+      <Bond atomName1="S" atomName2="P"/>
+      <ExternalBond atomName="P"/>
+    </Residue>
+    <!--GUA in the middle-->
+    <Residue name="GUA">
+      <Atom name="G" type="3"/>
+      <Atom name="S" type="0"/>
+      <Atom name="P" type="1"/>
+      <Bond atomName1="G" atomName2="S"/>
+      <Bond atomName1="S" atomName2="P"/>
+      <ExternalBond atomName="S"/>
+      <ExternalBond atomName="P"/>
+    </Residue>
+    <!--GUA at the 5'-->
+    <Residue name="GUA5">
+      <Atom name="G" type="3"/>
+      <Atom name="S" type="0"/>
+      <Atom name="P" type="1"/>
+      <Bond atomName1="G" atomName2="S"/>
+      <Bond atomName1="S" atomName2="P"/>
+      <ExternalBond atomName="S"/>
+    </Residue>
+    <!--GUA at the 3'-->
+    <Residue name="GUA3">
+      <Atom name="G" type="3"/>
+      <Atom name="S" type="0"/>
+      <Atom name="P" type="1"/>
+      <Atom name="P3" type="6"/>
+      <Bond atomName1="G" atomName2="S"/>
+      <Bond atomName1="S" atomName2="P"/>
+      <Bond atomName1="S" atomName2="P3"/>
+      <ExternalBond atomName="P"/>
+    </Residue>
+    <!--GUA at the 3' with no phosphate-->
+    <Residue name="GUA3dP">
+      <Atom name="G" type="3"/>
+      <Atom name="S" type="0"/>
+      <Atom name="P" type="1"/>
+      <Bond atomName1="G" atomName2="S"/>
+      <Bond atomName1="S" atomName2="P"/>
+      <ExternalBond atomName="P"/>
+    </Residue>
+    <!--CYT in the middle-->
+    <Residue name="CYT">
+      <Atom name="C" type="4"/>
+      <Atom name="S" type="0"/>
+      <Atom name="P" type="1"/>
+      <Bond atomName1="C" atomName2="S"/>
+      <Bond atomName1="S" atomName2="P"/>
+      <ExternalBond atomName="S"/>
+      <ExternalBond atomName="P"/>
+    </Residue>
+    <!--CYT at the 5'-->
+    <Residue name="CYT5">
+      <Atom name="C" type="4"/>
+      <Atom name="S" type="0"/>
+      <Atom name="P" type="1"/>
+      <Bond atomName1="C" atomName2="S"/>
+      <Bond atomName1="S" atomName2="P"/>
+      <ExternalBond atomName="S"/>
+    </Residue>
+    <!--CYT at the 3'-->
+    <Residue name="CYT3">
+      <Atom name="C" type="4"/>
+      <Atom name="S" type="0"/>
+      <Atom name="P" type="1"/>
+      <Atom name="P3" type="6"/>
+      <Bond atomName1="C" atomName2="S"/>
+      <Bond atomName1="S" atomName2="P"/>
+      <Bond atomName1="S" atomName2="P3"/>
+      <ExternalBond atomName="P"/>
+    </Residue>
+    <!--CYT at the 3' with no phosphate-->
+    <Residue name="CYT3dP">
+      <Atom name="C" type="3"/>
+      <Atom name="S" type="0"/>
+      <Atom name="P" type="1"/>
+      <Bond atomName1="C" atomName2="S"/>
+      <Bond atomName1="S" atomName2="P"/>
+      <ExternalBond atomName="P"/>
+    </Residue>
+    <!--URA in the middle-->
+    <Residue name="URA">
+      <Atom name="U" type="5"/>
+      <Atom name="S" type="0"/>
+      <Atom name="P" type="1"/>
+      <Bond atomName1="U" atomName2="S"/>
+      <Bond atomName1="S" atomName2="P"/>
+      <ExternalBond atomName="S"/>
+      <ExternalBond atomName="P"/>
+    </Residue>
+    <!--URA at the 5'-->
+    <Residue name="URA5">
+      <Atom name="U" type="5"/>
+      <Atom name="S" type="0"/>
+      <Atom name="P" type="1"/>
+      <Bond atomName1="U" atomName2="S"/>
+      <Bond atomName1="S" atomName2="P"/>
+      <ExternalBond atomName="S"/>
+    </Residue>
+    <!--URA at the 3'-->
+    <Residue name="URA3">
+      <Atom name="U" type="5"/>
+      <Atom name="S" type="0"/>
+      <Atom name="P" type="1"/>
+      <Atom name="P3" type="6"/>
+      <Bond atomName1="U" atomName2="S"/>
+      <Bond atomName1="S" atomName2="P"/>
+      <Bond atomName1="S" atomName2="P3"/>
+      <ExternalBond atomName="P"/>
+    </Residue>
+    <!--URA at the 3' with no phosphate-->
+    <Residue name="URA3dP">
+      <Atom name="U" type="3"/>
+      <Atom name="S" type="0"/>
+      <Atom name="P" type="1"/>
+      <Bond atomName1="U" atomName2="S"/>
+      <Bond atomName1="S" atomName2="P"/>
+      <ExternalBond atomName="P"/>
+    </Residue>
+
+    <Residue name="Mg">
+      <Atom name="Mg" type="7"/>
+    </Residue>
+    <Residue name="Ca">
+      <Atom name="Ca" type="8"/>
+    </Residue>
+  </Residues>
+</ForceField>
