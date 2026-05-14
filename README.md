@@ -4,7 +4,7 @@
 
 The code is organized into two main parts:
 
-- `model/`: OpenMM implementation of the coarse-grained RNA model with explicit Mg$^{2+}$ ions and implicit monovalent salt/water effects.
+- `model/`: OpenMM implementation of the coarse-grained RNA model with explicit Mg²⁺ ions and implicit monovalent salt/water effects.
 - `analysis/`: scripts and notebooks used to analyze trajectories and generate the main manuscript figures.
 
 The repository is intended to help readers reproduce the simulation setup, understand how the model was implemented, and follow the analysis workflow used in the paper.
@@ -45,11 +45,11 @@ biophysical-temperature-dependent-ssRNA/
 
 ## Model overview
 
-The model is a three-interaction-site coarse-grained representation of single-stranded RNA. Each nucleotide is represented by phosphate, sugar, and base beads. The simulation includes explicit Mg$^{2+}$ ions, while monovalent salt and solvent effects are treated implicitly.
+The model is a three-interaction-site coarse-grained representation of single-stranded RNA. Each nucleotide is represented by phosphate, sugar, and base beads. The simulation includes explicit Mg²⁺ ions, while monovalent salt and solvent effects are treated implicitly.
 
-The total potential energy includes bonded terms, excluded-volume interactions, base-stacking interactions, Debye--Hückel electrostatics, and a temperature-dependent Mg$^{2+}$--phosphate interaction derived from potential of mean force tables.
+The total potential energy includes bonded terms, excluded-volume interactions, base-stacking interactions, Debye--Hückel electrostatics, and a temperature-dependent Mg²⁺--phosphate interaction derived from potential of mean force tables.
 
-The Mg$^{2+}$--phosphate PMF files are provided at several temperatures:
+The Mg²⁺--phosphate PMF files are provided at several temperatures:
 
 ```text
 pmf_MgP.t0
@@ -60,7 +60,7 @@ pmf_MgP.t80
 pmf_MgP.t100
 ```
 
-These files are used by the OpenMM model to define temperature-dependent Mg$^{2+}$--RNA interactions.
+These files are used by the OpenMM model to define temperature-dependent Mg²⁺--RNA interactions.
 
 ---
 
@@ -117,7 +117,7 @@ python main.py \
 | `-pc`, `--pdb_coordinates` | Input coarse-grained PDB coordinates. |
 | `-T`, `--temperature` | Simulation temperature in °C. |
 | `-K`, `--monovalent_concentration` | Monovalent salt concentration in mM. |
-| `-M`, `--divalent_concentration` | Mg$^{2+}$ concentration in mM. |
+| `-M`, `--divalent_concentration` | Mg²⁺ concentration in mM. |
 | `-v`, `--box_size` | Cubic box length in Å. |
 | `-s`, `--step` | Number of MD steps. |
 | `-ts`, `--time_step` | Time step in fs. |
@@ -196,14 +196,14 @@ The output contains the separation index and the corresponding orientation corre
 
 ---
 
-### 2. Inner- and outer-shell Mg$^{2+}$ counts
+### 2. Inner- and outer-shell Mg²⁺ counts
 
-`inner-outer.py` counts Mg$^{2+}$ ions in inner- and outer-shell coordination around RNA phosphate beads.
+`inner-outer.py` counts Mg²⁺ ions in inner- and outer-shell coordination around RNA phosphate beads.
 
 Default cutoffs:
 
-- Inner-shell Mg$^{2+}$: Mg--P distance `< 3.2 Å`
-- Outer-shell Mg$^{2+}$: Mg--P distance between `3.2 Å` and `6.1 Å`
+- Inner-shell Mg²⁺: Mg--P distance `< 3.2 Å`
+- Outer-shell Mg²⁺: Mg--P distance between `3.2 Å` and `6.1 Å`
 
 Example:
 
@@ -222,11 +222,11 @@ Output:
 hist_data.dat
 ```
 
-The output contains frame-by-frame counts of inner- and outer-shell Mg$^{2+}$ ions.
+The output contains frame-by-frame counts of inner- and outer-shell Mg²⁺ ions.
 
 ---
 
-### 3. Radial local Mg$^{2+}$ concentration
+### 3. Radial local Mg²⁺ concentration
 
 `local-concentration.py` calculates radial ion concentration profiles around the center of a selected RNA group.
 
@@ -247,7 +247,7 @@ Output:
 local_concentration.dat
 ```
 
-The output contains radial distance and local Mg$^{2+}$ concentration in mM.
+The output contains radial distance and local Mg²⁺ concentration in mM.
 
 ---
 
@@ -287,7 +287,7 @@ These scripts were used to process trajectories and visualize the spatial distri
 
 ## Figure-specific analysis
 
-The folders `Fig2/`, `Fig3/`, `Fig4/`, and `Fig5/` contain scripts and notebooks used to generate the corresponding manuscript figures. These directories are organized around the major analyses in the paper, including RNA compaction, Mg$^{2+}$ redistribution, structural correlations, and ion coordination behavior.
+The folders `Fig2/`, `Fig3/`, `Fig4/`, and `Fig5/` contain scripts and notebooks used to generate the corresponding manuscript figures. These directories are organized around the major analyses in the paper, including RNA compaction, Mg²⁺ redistribution, structural correlations, and ion coordination behavior.
 
 Because many figure scripts depend on local trajectory paths and intermediate data files, users may need to edit file paths before running them on a new machine.
 
@@ -316,6 +316,7 @@ For questions about the model or analysis scripts, please contact:
 ```text
 Peter Zhang
 University at Buffalo
+Email: hzhang79@buffalo.edu
 GitHub: peter-zhang-chem
 ```
 
