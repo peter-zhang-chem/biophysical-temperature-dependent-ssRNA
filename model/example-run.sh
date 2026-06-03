@@ -1,0 +1,15 @@
+python main.py \
+    -f AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA \
+    -c 100 \
+    -T 20 \
+    -ts 2 \
+    -t "md.dcd" \
+    -e "md-energy.out" \
+    -o "md.out" \
+    -x 10000 \
+    -s 1000000000 \
+    -K 20 \
+    -M 5 \
+    -v 500 \
+    -n "rA30-cg.pdb" \
+    -r "check-point.chk"
