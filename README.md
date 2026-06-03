@@ -21,7 +21,7 @@ biophysical-temperature-dependent-ssRNA/
 │   ├── build.py
 │   ├── force.py
 │   ├── main.py
-│   ├── example-run.py
+│   ├── example-run.sh
 │   ├── pmf_MgP.t0
 │   ├── pmf_MgP.t20
 │   ├── pmf_MgP.t40
