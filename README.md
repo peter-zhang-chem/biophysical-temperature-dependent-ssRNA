@@ -304,7 +304,7 @@ The scripts in this repository are intended to reproduce the model setup and ana
 If you use this code, please cite the associated manuscript:
 
 ```text
-(1) Zhang, H.; Maity, H.; Nguyen, H. Temperature-Dependent Ion Migration Underlies Sequence-Specific RNA Collapse. bioRxiv October 21, 2025, p 2025.10.20.683600. https://doi.org/10.1101/2025.10.20.683600.
+Zhang, H.; Maity, H.; Nguyen, H. T. Temperature-Dependent Ion Migration Underlies Sequence-Specific Collapse of Unstructured RNA. Biophysical Journal 2026. https://doi.org/10.1016/j.bpj.2026.05.026.
 ```
 
 ---
