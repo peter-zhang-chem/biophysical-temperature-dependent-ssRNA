@@ -47,7 +47,7 @@ biophysical-temperature-dependent-ssRNA/
 
 The model is a three-interaction-site coarse-grained representation of single-stranded RNA. Each nucleotide is represented by phosphate, sugar, and base beads. The simulation includes explicit Mg²⁺ ions, while monovalent salt and solvent effects are treated implicitly.
 
-The total potential energy includes bonded terms, excluded-volume interactions, base-stacking interactions, Debye--Hückel electrostatics, and a temperature-dependent Mg²⁺--phosphate interaction derived from Reference Interaction Site Model (1D-RISM to be exact, see [Nguyen, 2019](https://www.pnas.org/doi/abs/10.1073/pnas.1911632116), and [Case, 2012](https://books.rsc.org/books/edited-volume/1295/chapter-abstract/2427707/Integral-Equation-Theory-of-Biomolecules-and?redirectedFrom=fulltext).
+The total potential energy includes bonded terms, excluded-volume interactions, base-stacking interactions, Debye--Hückel electrostatics, and a temperature-dependent Mg²⁺--phosphate interaction derived from Reference Interaction Site Model (1D-RISM to be exact, see [Nguyen, 2019](https://www.pnas.org/doi/abs/10.1073/pnas.1911632116), and [Case, 2012](https://books.rsc.org/books/edited-volume/1295/chapter-abstract/2427707/Integral-Equation-Theory-of-Biomolecules-and?redirectedFrom=fulltext)).
 
 The Mg²⁺--phosphate PMF files are provided at several temperatures:
 
