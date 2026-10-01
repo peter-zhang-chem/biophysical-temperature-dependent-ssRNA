@@ -38,6 +38,7 @@ biophysical-temperature-dependent-ssRNA/
     ├── SASA.py
     ├── align-traj.py
     ├── inner-outer.py
+    ├── calc_stacking_propensity.py
     └── local-concentration.py
 ```
 
